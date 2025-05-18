@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trò chơi tìm hiểu kiến thức</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: #333;
+      margin: 0;
+      flex-direction: column;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.9);
+      background-image: url('Trongdong.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      width: 90%;
+      max-width: 600px;
+      margin-bottom: 20px;
+      animation: fadeIn 0.8s ease-out;
+    }
+
+    h1 {
+      color: red;
+      margin-bottom: 20px;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .subtitle {
+      color: #4B0082;
+      font-size: 1.1em;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    /* CSS cho nút Hướng dẫn */
+    #toggle-instruction {
+        display: block; /* Đảm bảo nút là block để căn giữa dễ hơn nếu cần */
+        margin: 10px auto; /* Căn giữa nút */
+        padding: 10px 20px; /* Tăng padding để nút to hơn */
+        font-size: 1.2em; /* Tăng kích thước chữ */
+        color: white; /* Màu chữ trắng */
+        background-color: red; /* Nền màu đỏ */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    #toggle-instruction:hover {
+        background-color: darkred; /* Đổi màu khi hover */
+    }
+
+    #toggle-instruction:active {
+        background-color: #8b0000; /* Đổi màu khi click */
+    }
+
+    /* CSS cho ảnh hướng dẫn */
+    #instruction-image {
+        display: none; /* Ban đầu ẩn ảnh */
+        max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng container */
+        height: auto; /* Giữ tỷ lệ khung hình */
+        margin-top: 10px; /* Khoảng cách phía trên ảnh */
+        border: 1px solid #ccc; /* Thêm viền nhẹ cho ảnh */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ nhẹ */
+    }
+
+
+    .menu-button {
+      display: block;
+      margin: 15px auto;
+      padding: 20px 30px;
+      font-size: 1.4em;
+      color: #003366; /* Xanh đậm */
+      background-color: rgba(0, 123, 255, 0.2); /* Trong suốt */
+      border: none;
+      border-radius: 5厘px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      width: 90%;
+      max-width: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu-button span {
+      display: block;
+      text-align: center;
+    }
+
+    .menu-button .question-count {
+      font-size: 0.7em;
+      margin-top: 5px;
+    }
+
+    .menu-button:hover {
+      background-color: rgba(0, 86, 179, 0.4);
+      transform: translateY(-3px);
+    }
+
+    .menu-button:active {
+      background-color: rgba(0, 64, 133, 0.5);
+      transform: translateY(0);
+    }
+
+    .footer-text {
+      color: red;
+      font-size: 1em;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+      /* Điều chỉnh kích thước chữ nút hướng dẫn trên màn hình nhỏ hơn nếu cần */
+      #toggle-instruction {
+          font-size: 1em;
+          padding: 8px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="instruction-section" style="text-align: center; margin-bottom: 20px;">
+      <button id="toggle-instruction">Mở hướng dẫn</button>
+      <img id="instruction-image" src="img/huongdan.png" alt="Hướng dẫn" style="display: none;">
+  </div>
+
+  <div class="container">
+    <h1>Trò chơi<br>Tìm hiểu kiến thức</h1>
+    <p class="subtitle">Chọn chủ đề để tham gia:</p>
+    <a href="index1.html" class="menu-button">
+      <span>Tìm hiểu Lịch sử Việt Nam</span>
+      <span class="question-count">Mỗi lượt chơi 20 câu hỏi</span>
+    </a>
+    <a href="index2.html" class="menu-button">
+      <span>Tìm hiểu Công nghệ số</span>
+      <span class="question-count">Mỗi lượt chơi 20 câu hỏi</span>
+    </a>
+  </div>
+
+  <p class="footer-text">Tác phẩm dự thi của tổ công nghệ số cộng đồng Trung Bình A3, phường Thạc Gián</p>
+
+  <script>
+      document.getElementById('toggle-instruction').addEventListener('click', function() {
+          var image = document.getElementById('instruction-image');
+          var button = this; // 'this' ở đây là nút được click
+
+          if (image.style.display === 'none' || image.style.display === '') {
+              image.style.display = 'block'; // Hiển thị ảnh
+              button.textContent = 'Tắt hướng dẫn'; // Đổi chữ nút thành "Tắt hướng dẫn"
+          } else {
+              image.style.display = 'none'; // Ẩn ảnh
+              button.textContent = 'Mở hướng dẫn'; // Đổi chữ nút thành "Mở hướng dẫn"
+          }
+      });
+  </script>
+
+</body>
+</html>
