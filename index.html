@@ -49,14 +49,13 @@
       text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     }
 
-    /* CSS cho nút Hướng dẫn */
     #toggle-instruction {
-        display: block; /* Đảm bảo nút là block để căn giữa dễ hơn nếu cần */
-        margin: 10px auto; /* Căn giữa nút */
-        padding: 10px 20px; /* Tăng padding để nút to hơn */
-        font-size: 1.2em; /* Tăng kích thước chữ */
-        color: white; /* Màu chữ trắng */
-        background-color: red; /* Nền màu đỏ */
+        display: block;
+        margin: 10px auto;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        color: white;
+        background-color: red;
         border: none;
         border-radius: 5px;
         cursor: pointer;
@@ -64,33 +63,31 @@
     }
 
     #toggle-instruction:hover {
-        background-color: darkred; /* Đổi màu khi hover */
+        background-color: darkred;
     }
 
     #toggle-instruction:active {
-        background-color: #8b0000; /* Đổi màu khi click */
+        background-color: #8b0000;
     }
 
-    /* CSS cho ảnh hướng dẫn */
     #instruction-image {
-        display: none; /* Ban đầu ẩn ảnh */
-        max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng container */
-        height: auto; /* Giữ tỷ lệ khung hình */
-        margin-top: 10px; /* Khoảng cách phía trên ảnh */
-        border: 1px solid #ccc; /* Thêm viền nhẹ cho ảnh */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ nhẹ */
+        display: none;
+        max-width: 100%;
+        height: auto;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
-
 
     .menu-button {
       display: block;
       margin: 15px auto;
       padding: 20px 30px;
       font-size: 1.4em;
-      color: #003366; /* Xanh đậm */
-      background-color: rgba(0, 123, 255, 0.2); /* Trong suốt */
+      color: #003366;
+      background-color: rgba(0, 123, 255, 0.2);
       border: none;
-      border-radius: 5厘px;
+      border-radius: 5px;
       text-decoration: none;
       cursor: pointer;
       transition: background-color 0.3s ease, transform 0.2s ease;
@@ -138,7 +135,6 @@
       h1 {
         font-size: 2em;
       }
-      /* Điều chỉnh kích thước chữ nút hướng dẫn trên màn hình nhỏ hơn nếu cần */
       #toggle-instruction {
           font-size: 1em;
           padding: 8px 15px;
@@ -149,7 +145,7 @@
 <body>
   <div id="instruction-section" style="text-align: center; margin-bottom: 20px;">
       <button id="toggle-instruction">Mở hướng dẫn</button>
-      <img id="instruction-image" src="img/huongdan.png" alt="Hướng dẫn" style="display: none;">
+      <img id="instruction-image" src="huongdan.png" alt="Hướng dẫn" style="display: none;">
   </div>
 
   <div class="container">
@@ -168,16 +164,87 @@
   <p class="footer-text">Tác phẩm dự thi của tổ công nghệ số cộng đồng Trung Bình A3, phường Thạc Gián</p>
 
   <script>
+      // --- Wake Lock API - Chống tắt màn hình ---
+      let wakeLockSentinel = null;
+
+      const requestWakeLock = async () => {
+          if ('wakeLock' in navigator) {
+              try {
+                  wakeLockSentinel = await navigator.wakeLock.request('screen');
+                  // console.log('Screen Wake Lock is active.'); // Ghi chú: Khóa màn hình đã kích hoạt
+                  wakeLockSentinel.addEventListener('release', () => {
+                      // console.log('Screen Wake Lock was released.'); // Ghi chú: Khóa màn hình đã được giải phóng
+                      wakeLockSentinel = null; // Đặt lại để có thể yêu cầu lại nếu cần
+                  });
+              } catch (err) {
+                  // console.error(`Wake Lock error: ${err.name}, ${err.message}`); // Ghi chú: Lỗi Wake Lock
+                  // Không làm gì thêm nếu có lỗi, trò chơi vẫn hoạt động
+              }
+          } else {
+              // console.log('Wake Lock API not supported by this browser.'); // Ghi chú: API Wake Lock không được trình duyệt này hỗ trợ
+          }
+      };
+
+      // Hàm để yêu cầu khóa màn hình (nếu chưa có)
+      const acquireWakeLock = async () => {
+          if (!wakeLockSentinel || (wakeLockSentinel && wakeLockSentinel.released)) {
+              await requestWakeLock();
+          }
+      };
+
+      // Yêu cầu khóa màn hình khi trang được tải hoặc trở nên hiển thị
+      //Sử dụng DOMContentLoaded để đảm bảo DOM sẵn sàng, mặc dù gọi trực tiếp cũng thường hoạt động
+      document.addEventListener('DOMContentLoaded', acquireWakeLock);
+      document.addEventListener('visibilitychange', () => {
+          if (document.visibilityState === 'visible') {
+              acquireWakeLock();
+          }
+      });
+      // Yêu cầu lần đầu khi script chạy phòng trường hợp DOMContentLoaded đã qua
+      acquireWakeLock();
+
+
+      // --- Logic phát nhạc và chuyển hướng ---
+      let audioPlayedOnce = false;
+      const audioPlayer = new Audio('hd.mp3'); // Tạo đối tượng Audio
+      let redirectTimeoutId; // Biến lưu ID của setTimeout
+
       document.getElementById('toggle-instruction').addEventListener('click', function() {
           var image = document.getElementById('instruction-image');
-          var button = this; // 'this' ở đây là nút được click
+          var button = this;
 
           if (image.style.display === 'none' || image.style.display === '') {
-              image.style.display = 'block'; // Hiển thị ảnh
-              button.textContent = 'Tắt hướng dẫn'; // Đổi chữ nút thành "Tắt hướng dẫn"
+              image.style.display = 'block';
+              button.textContent = 'Tắt hướng dẫn';
+
+              if (!audioPlayedOnce) {
+                  audioPlayer.currentTime = 0; // Đảm bảo nhạc phát từ đầu
+                  audioPlayer.play().catch(error => {
+                      console.error("Lỗi phát âm thanh:", error);
+                  });
+                  audioPlayedOnce = true;
+
+                  audioPlayer.onended = null; // Xóa listener cũ (nếu có)
+                  audioPlayer.onended = function() {
+                      if (redirectTimeoutId) {
+                          clearTimeout(redirectTimeoutId);
+                      }
+                      redirectTimeoutId = setTimeout(function() {
+                          window.location.href = 'index.html'; // Chuyển về trang chủ
+                      }, 3000); // *** THAY ĐỔI: 3000 milliseconds = 3 giây ***
+                  };
+              }
           } else {
-              image.style.display = 'none'; // Ẩn ảnh
-              button.textContent = 'Mở hướng dẫn'; // Đổi chữ nút thành "Mở hướng dẫn"
+              image.style.display = 'none';
+              button.textContent = 'Mở hướng dẫn';
+
+              if (!audioPlayer.paused) {
+                  audioPlayer.pause();
+              }
+              if (redirectTimeoutId) {
+                  clearTimeout(redirectTimeoutId);
+                  redirectTimeoutId = null;
+              }
           }
       });
   </script>
