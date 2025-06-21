@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trò chơi Tìm hiểu Lịch sử Việt Nam</title>
-    <link rel="stylesheet" href="history_style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <canvas id="confetti-canvas"></canvas>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
@@ -12,25 +12,36 @@
     <audio id="bg-music" loop>
         <source src="nhac-nen.mp3" type="audio/mpeg">
         <source src="nhac-nen.ogg" type="audio/ogg">
-        </audio>
+    </audio>
 
     <audio id="correct-sound" preload="auto">
         <source src="correct.mp3" type="audio/mpeg">
         <source src="correct.ogg" type="audio/ogg">
-        </audio>
+    </audio>
 
     <audio id="wrong-sound" preload="auto">
         <source src="wrong.mp3" type="audio/mpeg">
         <source src="wrong.ogg" type="audio/ogg">
-        </audio>
+    </audio>
 
-    <audio id="timeout-sound" src="timeout.mp3"></audio>  <div class="music-control">
+    <audio id="timeout-sound" src="timeout.mp3"></audio>
+    <audio id="audio-tb1" preload="auto"><source src="audio/tb1.wav" type="audio/wav"></audio>
+    <audio id="audio-tb2" preload="auto"><source src="audio/tb2.wav" type="audio/wav"></audio>
+    <audio id="audio-tb3" preload="auto"><source src="audio/tb3.wav" type="audio/wav"></audio>
+    <audio id="audio-tb4" preload="auto"><source src="audio/tb4.wav" type="audio/wav"></audio>
+    <audio id="audio-tb5" preload="auto"><source src="audio/tb5.wav" type="audio/wav"></audio>
+
+    <div class="music-control">
         <button id="toggle-music">Tắt nhạc</button>
     </div>
 
     <div class="container">
         <div class="scrolling-text-container">
             <h1 class="scrolling-text">Tìm hiểu lịch sử Việt Nam</h1>
+        </div>
+
+        <div id="notification-popup" class="notification-popup hide">
+            <p id="notification-text"></p>
         </div>
 
         <div id="start-container" class="start-menu">
@@ -42,7 +53,7 @@
         <div id="question-container" class="hide">
             <div id="question">Câu hỏi sẽ hiện ở đây</div>
             <div id="answer-buttons" class="btn-grid"></div>
-             </div>
+        </div>
 
         <div id="result-container" class="hide">
             <h2 id="result-message"></h2>
@@ -54,8 +65,7 @@
             <p>Được tạo bởi <a href="mailto:anhthacgian@gmail.com">anhthacgian@gmail.com</a></p>
         </footer>
     </div>
-
     <script src="history_questions.js"></script>
-    <script src="history_script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
