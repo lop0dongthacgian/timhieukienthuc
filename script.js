@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 correctSound.play();
             }
             // --- Thông báo 3 khi trả lời đúng (2 giây cho text, âm thanh phát hết) ---
-            showNotification("Chúc mừng, bạn đã trả lời chính xác!", audioTb3, 2000);
+            showNotification("Đúng rồi!", audioTb3, 2000);
             // Kích hoạt Confetti nếu có
             if (window.confetti) { // Đảm bảo confetti đã được tải
                 triggerConfetti();
@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 wrongSound.play();
             }
             // --- Thông báo 4 khi trả lời sai (2 giây cho text, âm thanh phát hết) ---
-            showNotification("Bạn đã trả lời sai rồi, cần tìm hiểu lại nhé!", audioTb4, 2000);
+            showNotification("Sai rồ!", audioTb4, 2000);
         }
 
         // Vô hiệu hóa tất cả các nút sau khi chọn
