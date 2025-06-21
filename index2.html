@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tìm hiểu công nghệ số</title>
-    <link rel="stylesheet" href="digital_style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <canvas id="confetti-canvas"></canvas>
@@ -28,6 +28,12 @@
     </audio>
 
     <audio id="timeout-sound" src="timeout.mp3"></audio>
+    <audio id="audio-tb1" preload="auto"><source src="audio/tb1.wav" type="audio/wav"></audio>
+    <audio id="audio-tb2" preload="auto"><source src="audio/tb2.wav" type="audio/wav"></audio>
+    <audio id="audio-tb3" preload="auto"><source src="audio/tb3.wav" type="audio/wav"></audio>
+    <audio id="audio-tb4" preload="auto"><source src="audio/tb4.wav" type="audio/wav"></audio>
+    <audio id="audio-tb5" preload="auto"><source src="audio/tb5.wav" type="audio/wav"></audio>
+
     <div class="music-control">
         <button id="toggle-music">Tắt nhạc</button>
     </div>
@@ -35,6 +41,10 @@
     <div class="container">
         <div class="scrolling-text-container">
             <h1 class="scrolling-text">Tìm hiểu công nghệ số</h1>
+        </div>
+
+        <div id="notification-popup" class="notification-popup hide">
+            <p id="notification-text"></p>
         </div>
 
         <div id="start-container" class="start-menu">
@@ -60,7 +70,7 @@
     </div>
 
     <script src="digital_questions.js"></script>
-    <script src="digital_script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
