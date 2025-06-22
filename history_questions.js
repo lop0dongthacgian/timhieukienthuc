@@ -1,4 +1,4 @@
-const questions = [
+window.questions = [
     {
         question: 'Nền văn hóa khảo cổ nào tiêu biểu cho thời kỳ Hùng Vương dựng nước?',
         answers: [
@@ -898,8 +898,908 @@ const questions = [
             { text: 'Phải dựa vào dân, vì dân', correct: false },
             { text: 'Tất cả các bài học trên', correct: true }
         ]
+    },
+{
+        question: 'Vị danh sĩ mang họ Ngô nào từng soạn bộ "Lê triều sử ký"?',
+        answers: [
+            { text: 'Ngô Thì Nhậm', correct: true },
+            { text: 'Ngô Quyền', correct: false },
+            { text: 'Ngô Sĩ Liên', correct: false },
+            { text: 'Ngô Văn Sở', correct: false }
+        ]
+    },
+    {
+        question: 'Ai là danh tướng dưới triều Lý, từng dẹp Chiêm Thành và đánh thắng quân Tống?',
+        answers: [
+            { text: 'Trần Hưng Đạo', correct: false },
+            { text: 'Lý Thường Kiệt', correct: true },
+            { text: 'Lê Hoàn', correct: false },
+            { text: 'Trần Quốc Tuấn', correct: false }
+        ]
+    },
+    {
+        question: 'Vị vua nào được dân gian mô tả với "gương mặt sắt đen sì"?',
+        answers: [
+            { text: 'Đinh Tiên Hoàng', correct: false },
+            { text: 'Lý Thái Tổ', correct: false },
+            { text: 'Mai Hắc Đế', correct: true },
+            { text: 'Ngô Quyền', correct: false }
+        ]
+    },
+    {
+        question: 'Tên của người thợ lặn giỏi đã đục thùng thuyền giặc trên sông Bạch Đằng?',
+        answers: [
+            { text: 'Trần Bình Trọng', correct: false },
+            { text: 'Yết Kiêu', correct: true },
+            { text: 'Phạm Ngũ Lão', correct: false },
+            { text: 'Dã Tượng', correct: false }
+        ]
+    },
+    {
+        question: '"Đầu thần chưa rơi xuống đất, bệ hạ đừng lo" là câu nói của ai thời nhà Trần?',
+        answers: [
+            { text: 'Trần Quốc Tuấn', correct: false },
+            { text: 'Trần Thủ Độ', correct: true },
+            { text: 'Trần Quang Khải', correct: false },
+            { text: 'Trần Khánh Dư', correct: false }
+        ]
+    },
+    {
+        question: 'Vị đại vương nào nổi tiếng với chuyện bè gây sừng trâu?',
+        answers: [
+            { text: 'Lý Nam Đế', correct: false },
+            { text: 'Triệu Quang Phục', correct: false },
+            { text: 'Phùng Hưng', correct: true },
+            { text: 'Mai Thúc Loan', correct: false }
+        ]
+    },
+    {
+        question: 'Nữ tướng triều Trưng lừng danh ở miền Châu Diên, tên là gì?',
+        answers: [
+            { text: 'Trưng Trắc', correct: false },
+            { text: 'Trưng Nhị', correct: false },
+            { text: 'Lê Chân', correct: true },
+            { text: 'Bùi Thị Xuân', correct: false }
+        ]
+    },
+    {
+        question: 'Vị danh nhân nào nổi tiếng quản lý đất đai ven biển thời Nguyễn, còn gọi là Dinh điền sứ?',
+        answers: [
+            { text: 'Nguyễn Du', correct: false },
+            { text: 'Nguyễn Công Trứ', correct: true },
+            { text: 'Cao Bá Quát', correct: false },
+            { text: 'Phạm Ngũ Lão', correct: false }
+        ]
+    },
+    {
+        question: 'Ai là minh quân nhà Lý, từng cho lập Văn Miếu để đề cao Nho giáo?',
+        answers: [
+            { text: 'Lý Thái Tông', correct: false },
+            { text: 'Lý Thánh Tông', correct: true },
+            { text: 'Lý Nhân Tông', correct: false },
+            { text: 'Lý Anh Tông', correct: false }
+        ]
+    },
+    {
+        question: 'Ai đã đổi long bào để cứu vua Lê Thái Tổ?',
+        answers: [
+            { text: 'Lê Lợi', correct: false },
+            { text: 'Lê Lai', correct: true },
+            { text: 'Nguyễn Trãi', correct: false },
+            { text: 'Trần Nguyên Hãn', correct: false }
+        ]
+    },
+    {
+        question: 'Hà-Ninh tổng đốc nào tuẫn tiết tại thành khi đối mặt quân Pháp?',
+        answers: [
+            { text: 'Nguyễn Tri Phương', correct: false },
+            { text: 'Hoàng Diệu', correct: true },
+            { text: 'Trương Định', correct: false },
+            { text: 'Phan Đình Phùng', correct: false }
+        ]
+    },
+    {
+        question: 'Vị vua đầu triều Tiền Lê, từng lãnh đạo đánh thắng quân Tống năm 981 là ai?',
+        answers: [
+            { text: 'Đinh Tiên Hoàng', correct: false },
+            { text: 'Lê Hoàn (Lê Đại Hành)', correct: true },
+            { text: 'Lê Long Đĩnh', correct: false },
+            { text: 'Lý Công Uẩn', correct: false }
+        ]
+    },
+    {
+        question: 'Vị vua khai sáng nhà Lý, thời còn nhỏ từng nương nhờ cửa chùa, tên là gì?',
+        answers: [
+            { text: 'Lý Thái Tông', correct: false },
+            { text: 'Lý Công Uẩn', correct: true },
+            { text: 'Lý Nhân Tông', correct: false },
+            { text: 'Lý Thường Kiệt', correct: false }
+        ]
+    },
+    {
+        question: 'Danh y lỗi lạc, tác giả "Hải Thượng y tông tâm lĩnh" được dân gian tôn quý là ai?',
+        answers: [
+            { text: 'Tuệ Tĩnh', correct: false },
+            { text: 'Hải Thượng Lãn Ông (Lê Hữu Trác)', correct: true },
+            { text: 'Phạm Công Trứ', correct: false },
+            { text: 'Đào Duy Từ', correct: false }
+        ]
+    },
+    {
+        question: 'Cuộc đại thắng quân Thanh diễn ra vào mùa xuân năm nào?',
+        answers: [
+            { text: 'Mậu Tuất', correct: false },
+            { text: 'Kỷ Dậu', correct: true },
+            { text: 'Canh Tý', correct: false },
+            { text: 'Tân Sửu', correct: false }
+        ]
+    },
+    {
+        question: 'Ai là vị vua được rùa thần dâng nỏ giúp xây thành?',
+        answers: [
+            { text: 'Lê Lợi', correct: false },
+            { text: 'An Dương Vương', correct: true },
+            { text: 'Lý Thái Tổ', correct: false },
+            { text: 'Đinh Bộ Lĩnh', correct: false }
+        ]
+    },
+    {
+        question: 'Tướng tài thời Tây Sơn, người đã "bẻ gậy phò vua" là ai?',
+        answers: [
+            { text: 'Hoàng Hoa Thám', correct: false },
+            { text: 'Quang Trung', correct: true },
+            { text: 'Bùi Thị Xuân', correct: false },
+            { text: 'Trần Quang Diệu', correct: false }
+        ]
+    },
+    {
+        question: 'Danh tướng nào đánh tan quân Thanh, giữ vững giang sơn thời Tây Sơn?',
+        answers: [
+            { text: 'Nguyễn Ánh', correct: false },
+            { text: 'Quang Trung', correct: true },
+            { text: 'Nguyễn Lữ', correct: false },
+            { text: 'Nguyễn Nhạc', correct: false }
+        ]
+    },
+    {
+        question: 'Ai được gọi là anh hùng trong đại thắng Đống Đa?',
+        answers: [
+            { text: 'Nguyễn Huệ', correct: true },
+            { text: 'Phan Bội Châu', correct: false },
+            { text: 'Hoàng Hoa Thám', correct: false },
+            { text: 'Phạm Ngũ Lão', correct: false }
+        ]
+    },
+    {
+        question: 'Nữ tướng xuất chúng của phong trào Tây Sơn, tên là gì?',
+        answers: [
+            { text: 'Nguyễn Thị Minh Khai', correct: false },
+            { text: 'Bùi Thị Xuân', correct: true },
+            { text: 'Đoàn Thị Điểm', correct: false },
+            { text: 'Hồ Xuân Hương', correct: false }
+        ]
+    },
+    {
+        question: 'Vị vua cuối triều Tiền Lê thường nằm khi thiết triều, còn được gọi là Lê Ngọa Triều, là ai?',
+        answers: [
+            { text: 'Lê Long Đĩnh', correct: true },
+            { text: 'Lê Đại Hành', correct: false },
+            { text: 'Lê Thái Tổ', correct: false },
+            { text: 'Lê Thánh Tông', correct: false }
+        ]
+    },
+    {
+        question: 'Ai từng dâng sớ chém kẻ nịnh thần nhưng không thành, sau đó từ quan?',
+        answers: [
+            { text: 'Nguyễn Trãi', correct: false },
+            { text: 'Chu Văn An', correct: true },
+            { text: 'Nguyễn Bỉnh Khiêm', correct: false },
+            { text: 'Lương Thế Vinh', correct: false }
+        ]
+    },
+    {
+        question: 'Ai là thủ lĩnh khởi nghĩa ở núi Lam, mặc áo nâu, giành độc lập cho dân tộc?',
+        answers: [
+            { text: 'Trần Quốc Tuấn', correct: false },
+            { text: 'Lê Lợi', correct: true },
+            { text: 'Nguyễn Huệ', correct: false },
+            { text: 'Đinh Bộ Lĩnh', correct: false }
+        ]
+    },
+    {
+        question: 'Ở hội nghị Bình Than, ai nắm quả cam bày tỏ quyết tâm diệt giặc?',
+        answers: [
+            { text: 'Trần Hưng Đạo', correct: false },
+            { text: 'Trần Quốc Toản', correct: true },
+            { text: 'Trần Quang Khải', correct: false },
+            { text: 'Trần Thủ Độ', correct: false }
+        ]
+    },
+    {
+        question: 'Tác giả mù lòa nào đã viết truyện thơ "Lục Vân Tiên"?',
+        answers: [
+            { text: 'Nguyễn Du', correct: false },
+            { text: 'Nguyễn Đình Chiểu', correct: true },
+            { text: 'Hồ Xuân Hương', correct: false },
+            { text: 'Bà Huyện Thanh Quan', correct: false }
+        ]
+    },
+    {
+        question: 'Vua nào thời Hậu Lê sáng lập hội thơ Tao Đàn?',
+        answers: [
+            { text: 'Lê Thái Tổ', correct: false },
+            { text: 'Lê Thánh Tông', correct: true },
+            { text: 'Lê Hiến Tông', correct: false },
+            { text: 'Lê Tương Dực', correct: false }
+        ]
+    },
+    {
+        question: 'Vị quan họ Phan nào từng được trao ấn Khâm sai, nổi danh học vấn sâu rộng?',
+        answers: [
+            { text: 'Phan Bội Châu', correct: false },
+            { text: 'Phan Huy Chú', correct: true },
+            { text: 'Phan Thanh Giản', correct: false },
+            { text: 'Phan Châu Trinh', correct: false }
+        ]
+    },
+    {
+        question: 'Tướng Nguyên - Mông nào phải chui ống đồng rút chạy về phương Bắc?',
+        answers: [
+            { text: 'Toa Đô', correct: false },
+            { text: 'Ô Mã Nhi', correct: false },
+            { text: 'Thoát Hoan', correct: true },
+            { text: 'Bình Chương A Lý', correct: false }
+        ]
+    },
+    {
+        question: 'Ai bị lừa vì rắc lông ngỗng, dẫn đến kết cục "nghe chàng hại cha"?',
+        answers: [
+            { text: 'Mỵ Nương', correct: false },
+            { text: 'Mỵ Châu', correct: true },
+            { text: 'Thị Kính', correct: false },
+            { text: 'Vương Thuý Kiều', correct: false }
+        ]
+    },
+    {
+        question: 'Tác giả "Truyện Kiều" được mệnh danh là "Hồng Sơn liệp hộ" của triều Tây Sơn?',
+        answers: [
+            { text: 'Nguyễn Trãi', correct: false },
+            { text: 'Nguyễn Du', correct: true },
+            { text: 'Hồ Xuân Hương', correct: false },
+            { text: 'Nguyễn Công Trứ', correct: false }
+        ]
+    },
+    {
+        question: 'Nữ tướng "Ra trận quấn khăn vàng" ở bờ Hóa Giang, được dân gian ca tụng, là ai?',
+        answers: [
+            { text: 'Trưng Trắc', correct: false },
+            { text: 'Bà Triệu', correct: true },
+            { text: 'Bùi Thị Xuân', correct: false },
+            { text: 'Lê Chân', correct: false }
+        ]
+    },
+    {
+        question: 'Vị "Trạng Trình" từng ẩn cư ở Am Bạch Vân, không màng danh lợi là ai?',
+        answers: [
+            { text: 'Nguyễn Trãi', correct: false },
+            { text: 'Nguyễn Bỉnh Khiêm', correct: true },
+            { text: 'Lê Quý Đôn', correct: false },
+            { text: 'Lương Thế Vinh', correct: false }
+        ]
+    },
+    {
+        question: 'Vị vua dựng nước Âu Lạc, được cho là cháu Đế Minh, là ai?',
+        answers: [
+            { text: 'Kinh Dương Vương', correct: false },
+            { text: 'Hùng Vương', correct: false },
+            { text: 'An Dương Vương', correct: true },
+            { text: 'Lạc Long Quân', correct: false }
+        ]
+    },
+    {
+        question: '"Vua Bà" lừng lẫy, khởi nghĩa ở vùng núi Nưa, khiến quân Ngô kinh sợ, tên là gì?',
+        answers: [
+            { text: 'Trưng Trắc', correct: false },
+            { text: 'Bà Triệu', correct: true },
+            { text: 'Lê Chân', correct: false },
+            { text: 'Bùi Thị Xuân', correct: false }
+        ]
+    },
+    {
+        question: 'Ai là vị quan thời chúa Nguyễn, nổi tiếng xây dựng thành lũy, họ Đào?',
+        answers: [
+            { text: 'Nguyễn Hữu Cảnh', correct: false },
+            { text: 'Đào Duy Từ', correct: true },
+            { text: 'Mạc Thiên Tích', correct: false },
+            { text: 'Trần Thượng Xuyên', correct: false }
+        ]
+    },
+    {
+        question: 'Thi nhân "sông Vị" nổi bật về tài văn chương?',
+        answers: [
+            { text: 'Nguyễn Khuyến', correct: false },
+            { text: 'Tú Xương', correct: true },
+            { text: 'Nguyễn Đình Chiểu', correct: false },
+            { text: 'Cao Bá Quát', correct: false }
+        ]
+    },
+    {
+        question: 'Hoàng đế khai sáng nhà Nguyễn có húy danh là gì?',
+        answers: [
+            { text: 'Nguyễn Phúc Ánh', correct: false },
+            { text: 'Nguyễn Ánh (có bản ghi Nguyễn Ýnh)', correct: true },
+            { text: 'Nguyễn Huệ', correct: false },
+            { text: 'Nguyễn Nhạc', correct: false }
+        ]
+    },
+    {
+        question: 'Mẹ nào sinh ra trăm trứng, nở thành trăm người con của dân tộc Việt?',
+        answers: [
+            { text: 'Nữ Oa', correct: false },
+            { text: 'Mẹ Âu Cơ', correct: true },
+            { text: 'Bà Triệu', correct: false },
+            { text: 'Lê Chân', correct: false }
+        ]
+    },
+    {
+        question: 'Ai là vị vua Tây Sơn từng cưới công chúa Lê Ngọc Hân?',
+        answers: [
+            { text: 'Nguyễn Nhạc', correct: false },
+            { text: 'Nguyễn Lữ', correct: false },
+            { text: 'Quang Trung', correct: true },
+            { text: 'Cảnh Thịnh', correct: false }
+        ]
+    },
+    {
+        question: 'Chuyện "Bóp nát quả cam" là giai thoại nói về ai?',
+        answers: [
+            { text: 'Trần Hưng Đạo', correct: false },
+            { text: 'Trần Quốc Toản', correct: true },
+            { text: 'Trần Khắc Chung', correct: false },
+            { text: 'Trần Quang Khải', correct: false }
+        ]
+    },
+    {
+        question: 'Vị nữ tướng nào "giữ trọn lời thề" ở sông Hóa, khởi nghĩa năm 248?',
+        answers: [
+            { text: 'Trưng Trắc', correct: false },
+            { text: 'Bà Triệu', correct: true },
+            { text: 'Bùi Thị Xuân', correct: false },
+            { text: 'Lê Chân', correct: false }
+        ]
+    },
+    {
+        question: '"Tú tài" nổi danh ở vùng Đại Từ, được dân địa phương xưng tụng, tên là gì?',
+        answers: [
+            { text: 'Tú Xương', correct: false },
+            { text: 'Tú Xuất', correct: true },
+            { text: 'Nguyễn Khuyến', correct: false },
+            { text: 'Cao Bá Quát', correct: false }
+        ]
+    },
+    {
+        question: 'Nhà thơ họ Cao, nổi tiếng vì tâm hồn phản kháng mạnh mẽ, là ai?',
+        answers: [
+            { text: 'Nguyễn Du', correct: false },
+            { text: 'Cao Bá Quát', correct: true },
+            { text: 'Nguyễn Đình Chiểu', correct: false },
+            { text: 'Hồ Xuân Hương', correct: false }
+        ]
+    },
+    {
+        question: 'Ai là tác giả "Hịch tướng sĩ", kêu gọi toàn quân đoàn kết chống giặc Nguyên-Mông?',
+        answers: [
+            { text: 'Trần Quang Khải', correct: false },
+            { text: 'Trần Hưng Đạo (Trần Quốc Tuấn)', correct: true },
+            { text: 'Phạm Ngũ Lão', correct: false },
+            { text: 'Yết Kiêu', correct: false }
+        ]
+    },
+    {
+        question: '"Chinh phụ ngâm" phiên bản chữ Hán được dịch ra chữ Nôm bởi nữ sĩ nào?',
+        answers: [
+            { text: 'Hồ Xuân Hương', correct: false },
+            { text: 'Đoàn Thị Điểm', correct: true },
+            { text: 'Bà Huyện Thanh Quan', correct: false },
+            { text: 'Sương Nguyệt Anh', correct: false }
+        ]
+    },
+    {
+        question: 'Vị vua triều Nguyễn chống Pháp, bị đày ra châu Phi, là ai?',
+        answers: [
+            { text: 'Thành Thái', correct: false },
+            { text: 'Hàm Nghi', correct: true },
+            { text: 'Duy Tân', correct: false },
+            { text: 'Khải Định', correct: false }
+        ]
+    },
+    {
+        question: 'Ai là người chủ xướng phong trào Đông Du, đưa thanh niên sang Nhật du học?',
+        answers: [
+            { text: 'Phan Châu Trinh', correct: false },
+            { text: 'Phan Bội Châu', correct: true },
+            { text: 'Nguyễn Thái Học', correct: false },
+            { text: 'Huỳnh Thúc Kháng', correct: false }
+        ]
+    },
+    {
+        question: 'Ai lãnh đạo trận Rạch Gầm-Xoài Mút thắng lớn, khiến quân Xiêm thảm bại?',
+        answers: [
+            { text: 'Nguyễn Ánh', correct: false },
+            { text: 'Nguyễn Huệ', correct: true },
+            { text: 'Nguyễn Nhạc', correct: false },
+            { text: 'Lý Thường Kiệt', correct: false }
+        ]
+    },
+    {
+        question: 'Vị anh hùng "cưỡi ngựa sắt phun lửa" giải cứu đất nước khi mới ba tuổi là ai?',
+        answers: [
+            { text: 'Sơn Tinh', correct: false },
+            { text: 'Thánh Gióng', correct: true },
+            { text: 'Phù Đổng Thiên Vương', correct: false }, // Thánh Gióng cũng là Phù Đổng Thiên Vương
+            { text: 'Mai An Tiêm', correct: false }
+        ]
+    },
+    {
+        question: 'Danh xưng "Dạ Trạch Vương" thuộc về ai, người lập căn cứ ở Đầm Dạ Trạch?',
+        answers: [
+            { text: 'Mai Hắc Đế', correct: false },
+            { text: 'Dạ Trạch Vương - Triệu Quang Phục', correct: true },
+            { text: 'Phùng Hưng', correct: false },
+            { text: 'Đinh Bộ Lĩnh', correct: false }
+        ]
+    },
+    {
+        question: 'Tướng nào khảng khái tuyên bố "Ta thà làm quý nước Nam..." và không nhận tước vương của giặc?',
+        answers: [
+            { text: 'Trần Quang Khải', correct: false },
+            { text: 'Trần Bình Trọng', correct: true },
+            { text: 'Phạm Ngũ Lão', correct: false },
+            { text: 'Trần Quốc Tuấn', correct: false }
+        ]
+    },
+    {
+        question: 'Vị thiếu niên cầm đầu đám trẻ chăn trâu, tập trận bằng cờ lau, rồi thống nhất đất nước?',
+        answers: [
+            { text: 'Lê Lợi', correct: false },
+            { text: 'Đinh Bộ Lĩnh', correct: true },
+            { text: 'Nguyễn Huệ', correct: false },
+            { text: 'Trần Quốc Toản', correct: false }
+        ]
+    },
+    {
+        question: 'Ai gắn liền với tích "người chài đò" và nàng Mỵ Nương, tạo nên câu chuyện tương tư cảm động?',
+        answers: [
+            { text: 'Trọng Thủy - Mỵ Châu', correct: false },
+            { text: 'Trương Chỉ - Mỵ Nương', correct: true },
+            { text: 'Kim Trọng - Thúy Kiều', correct: false },
+            { text: 'Lương Sơn Bá - Chúc Anh Đài', correct: false }
+        ]
+    },
+    {
+        question: 'Vị vua Lê nào còn được tôn là "Nguyên súy hội Tao Đàn"?',
+        answers: [
+            { text: 'Lê Thái Tổ', correct: false },
+            { text: 'Lê Thánh Tông', correct: true },
+            { text: 'Lê Hiến Tông', correct: false },
+            { text: 'Lê Chiêu Thống', correct: false }
+        ]
+    },
+    {
+        question: 'Ngày mùng mấy tháng ba hằng năm diễn ra lễ hội Đền Hùng?',
+        answers: [
+            { text: 'Mùng 5 tháng 3', correct: false },
+            { text: '10-3', correct: true },
+            { text: '15 tháng 3', correct: false },
+            { text: 'Mùng 1 tháng 4', correct: false }
+        ]
+    },
+    {
+        question: 'Vị vua trẻ của phong trào Cần Vương, sau bị Pháp đày đi châu Phi, là ai?',
+        answers: [
+            { text: 'Hàm Nghi', correct: false },
+            { text: 'Duy Tân', correct: true },
+            { text: 'Thành Thái', correct: false },
+            { text: 'Khải Định', correct: false }
+        ]
+    },
+    {
+        question: 'Cha rồng kết duyên cùng Mẹ Âu Cơ, sinh ra dòng giống Lạc Hồng, là ai?',
+        answers: [
+            { text: 'Thần Nông', correct: false },
+            { text: 'Lạc Long Quân', correct: true },
+            { text: 'Kinh Dương Vương', correct: false },
+            { text: 'Hùng Vương', correct: false }
+        ]
+    },
+    {
+        question: 'Ai mượn gươm thần rồi hoàn kiếm lại cho rùa vàng ở hồ Tả Vọng?',
+        answers: [
+            { text: 'Lê Lai', correct: false },
+            { text: 'Lê Lợi', correct: true },
+            { text: 'Nguyễn Trãi', correct: false },
+            { text: 'Trần Nguyên Hãn', correct: false }
+        ]
+    },
+    {
+        question: 'Vị nữ tướng nào khóc trên lưng voi khi đánh quân Ngô, ở vùng Hóa Giang?',
+        answers: [
+            { text: 'Trưng Nhị', correct: false },
+            { text: 'Bà Triệu', correct: true },
+            { text: 'Bùi Thị Xuân', correct: false },
+            { text: 'Lê Chân', correct: false }
+        ]
+    },
+    {
+        question: 'Ai đã xây dựng Lũy Thầy trứ danh thời chúa Nguyễn?',
+        answers: [
+            { text: 'Đào Tấn', correct: false },
+            { text: 'Đào Duy Từ', correct: true },
+            { text: 'Nguyễn Công Trứ', correct: false },
+            { text: 'Nguyễn Hữu Cảnh', correct: false }
+        ]
+    },
+    {
+        question: 'Người chế tạo súng và nổi dậy chống Pháp ở Vũ Quang đầu thế kỷ XX là ai?',
+        answers: [
+            { text: 'Phan Đình Phùng', correct: false },
+            { text: 'Cao Thắng', correct: true },
+            { text: 'Hoàng Hoa Thám', correct: false },
+            { text: 'Nguyễn Thiện Thuật', correct: false }
+        ]
+    },
+    {
+        question: 'Vị danh thần triều Nguyễn, cũng được xem như tổ ngành Hát Bội, là ai?',
+        answers: [
+            { text: 'Nguyễn Du', correct: false },
+            { text: 'Đào Duy Từ', correct: true },
+            { text: 'Nguyễn Công Trứ', correct: false },
+            { text: 'Mạc Đĩnh Chi', correct: false }
+        ]
+    },
+    {
+        question: 'Ngọn núi nào gắn liền với truyền thuyết Sơn Tinh Thủy Tinh?',
+        answers: [
+            { text: 'Núi Ba Vì', correct: false },
+            { text: 'Tản Viên', correct: true },
+            { text: 'Núi Nưa', correct: false },
+            { text: 'Núi Lam Sơn', correct: false }
+        ]
+    },
+    {
+        question: '"Trạng Trình" nhận bức thư trao đổi từ một danh nho, đó là ai?',
+        answers: [
+            { text: 'Nguyễn Du', correct: false },
+            { text: 'Nguyễn Bỉnh Khiêm', correct: true },
+            { text: 'Chu Văn An', correct: false },
+            { text: 'Lê Quý Đôn', correct: false }
+        ]
+    },
+    {
+        question: 'Ai là người soạn thảo "Bình Ngô đại cáo", áng văn bất hủ khẳng định chủ quyền nước ta?',
+        answers: [
+            { text: 'Lê Lợi', correct: false },
+            { text: 'Nguyễn Trãi', correct: true },
+            { text: 'Trần Nguyên Hãn', correct: false },
+            { text: 'Nguyễn Xí', correct: false }
+        ]
+    },
+    {
+        question: 'Nhà toán học được tôn là "Trạng Lường" và sáng tác "Đại Thành Toán Pháp" là ai?',
+        answers: [
+            { text: 'Lê Quý Đôn', correct: false },
+            { text: 'Lương Thế Vinh', correct: true },
+            { text: 'Nguyễn Trường Tộ', correct: false },
+            { text: 'Phạm Quang Ảnh', correct: false }
+        ]
+    },
+    {
+        question: 'Vị danh thần nào nghe theo di huấn của cha, tạm rời biên ải để giành thắng lợi toàn cục?',
+        answers: [
+            { text: 'Trần Hưng Đạo', correct: false },
+            { text: 'Nguyễn Trãi', correct: true },
+            { text: 'Phạm Ngũ Lão', correct: false },
+            { text: 'Lê Lai', correct: false }
+        ]
+    },
+    {
+        question: 'Ai là người khởi xướng cuộc nổi dậy ở Thái Nguyên chống Pháp?',
+        answers: [
+            { text: 'Lương Ngọc Quyến', correct: false },
+            { text: 'Đội Cấn - Đội Cung', correct: true },
+            { text: 'Hoàng Hoa Thám', correct: false },
+            { text: 'Nguyễn Thái Học', correct: false }
+        ]
+    },
+    {
+        question: 'Cao tăng nổi tiếng dưới triều Lý, người tham vấn cho Lý Công Uẩn, tên gì?',
+        answers: [
+            { text: 'Khổng Minh Không', correct: false },
+            { text: 'Sư Vạn Hạnh', correct: true },
+            { text: 'Pháp Loa', correct: false },
+            { text: 'Điều Ngự Giác Hoàng', correct: false }
+        ]
+    },
+    {
+        question: '"Đồng bào" được bắt nguồn từ truyền thuyết mẹ đẻ bọc trăm trứng, đó là câu chuyện về ai?',
+        answers: [
+            { text: 'Sơn Tinh Thủy Tinh', correct: false },
+            { text: 'Mẹ Âu Cơ đẻ ra bọc trăm trứng', correct: true },
+            { text: 'Thánh Gióng', correct: false },
+            { text: 'Mai An Tiêm', correct: false }
+        ]
+    },
+    {
+        question: 'Vua triều Lê nào nổi tiếng bạo ngược, giết hại công thần, còn được gọi là "Vua quỷ"?',
+        answers: [
+            { text: 'Lê Chiêu Thống', correct: false },
+            { text: 'Lê Uy Mục', correct: true },
+            { text: 'Lê Tương Dực', correct: false },
+            { text: 'Lê Nghi Dân', correct: false }
+        ]
+    },
+    {
+        question: 'Người dùng kế sách "công bút" đánh lừa tướng Minh Vương Thông là ai?',
+        answers: [
+            { text: 'Lê Lợi', correct: false },
+            { text: 'Nguyễn Trãi', correct: true },
+            { text: 'Trần Nguyên Hãn', correct: false },
+            { text: 'Lê Sát', correct: false }
+        ]
+    },
+    {
+        question: 'Ai gây dựng cơ đồ ở vùng Mê Linh, phất cờ khởi nghĩa đánh đuổi Tô Định?',
+        answers: [
+            { text: 'Bà Triệu', correct: false },
+            { text: 'Hai Bà Trưng', correct: true },
+            { text: 'Bùi Thị Xuân', correct: false },
+            { text: 'Lê Chân', correct: false }
+        ]
+    },
+    {
+        question: 'Ai bôn ba nhiều nơi để thực hiện phong trào Đông Du đầu thế kỷ XX?',
+        answers: [
+            { text: 'Phan Châu Trinh', correct: false },
+            { text: 'Phan Bội Châu', correct: true },
+            { text: 'Lương Văn Can', correct: false },
+            { text: 'Nguyễn Thái Học', correct: false }
+        ]
+    },
+    {
+        question: 'Tác phẩm "Hoàng Lê nhất thống chí", ghi lại biến động cuối Lê - Tây Sơn, do tập thể nào chắp bút?',
+        answers: [
+            { text: 'Ngô Thì Nhậm', correct: false },
+            { text: 'Ngô Gia Văn Phái', correct: true },
+            { text: 'Nguyễn Du', correct: false },
+            { text: 'Phan Huy Chú', correct: false }
+        ]
+    },
+    {
+        question: 'Nhà thơ nào vì dính vào cuộc nổi loạn nên bị hành hình, gắn liền với câu "tài hoa yểu mệnh"?',
+        answers: [
+            { text: 'Nguyễn Khuyến', correct: false },
+            { text: 'Cao Bá Quát', correct: true },
+            { text: 'Nguyễn Du', correct: false },
+            { text: 'Tú Xương', correct: false }
+        ]
+    },
+    {
+        question: 'Bác Hồ đọc bản Tuyên ngôn Độc lập vào năm nào?',
+        answers: [
+            { text: '2/9/1930', correct: false },
+            { text: '2/9/1945', correct: true },
+            { text: '2/9/1954', correct: false },
+            { text: '2/9/1975', correct: false }
+        ]
+    },
+    {
+        question: 'Vua mở đầu triều Trần, sau khi nhà Lý suy vi, là ai?',
+        answers: [
+            { text: 'Trần Thủ Độ', correct: false },
+            { text: 'Trần Cảnh', correct: true },
+            { text: 'Trần Thái Tông', correct: false }, // Trần Cảnh là Trần Thái Tông
+            { text: 'Trần Quốc Tuấn', correct: false }
+        ]
+    },
+    {
+        question: 'Trạng nguyên vì dung mạo xấu xí của mình như hoa sen "gần bùn mà chẳng hôi tanh"?',
+        answers: [
+            { text: 'Nguyễn Hiền', correct: false },
+            { text: 'Mạc Đĩnh Chi', correct: true },
+            { text: 'Nguyễn Bỉnh Khiêm', correct: false },
+            { text: 'Lương Thế Vinh', correct: false }
+        ]
+    },
+    {
+        question: 'Vị tướng dưới triều Nguyễn, được thờ tại lăng Ông ở Sài Gòn là ai?',
+        answers: [
+            { text: 'Nguyễn Tri Phương', correct: false },
+            { text: 'Lê Văn Duyệt', correct: true },
+            { text: 'Trương Định', correct: false },
+            { text: 'Nguyễn Huỳnh Đức', correct: false }
+        ]
+    },
+    {
+        question: '"Hùm thiêng Yên Thế" chuyên kháng Pháp, khiến giặc nhiều lần thất bại, tên là gì?',
+        answers: [
+            { text: 'Đinh Công Tráng', correct: false },
+            { text: 'Hoàng Hoa Thám', correct: true },
+            { text: 'Nguyễn Thiện Thuật', correct: false },
+            { text: 'Phan Đình Phùng', correct: false }
+        ]
+    },
+    {
+        question: 'Các chức "Lạc Hầu", "Lạc Tướng" tồn tại vào thời nào?',
+        answers: [
+            { text: 'Trưng Vương', correct: false },
+            { text: 'Hùng Vương', correct: true },
+            { text: 'An Dương Vương', correct: false },
+            { text: 'Hai Bà Trưng', correct: false }
+        ]
+    },
+    {
+        question: 'Ai từng làm vua giữa chốn đồng lầy và ai dùng cờ lau tập trận lúc nhỏ?',
+        answers: [
+            { text: 'Lê Lợi và Trần Quốc Toản', correct: false },
+            { text: 'Đinh Bộ Lĩnh và Triệu Quang Phục', correct: true },
+            { text: 'Lý Công Uẩn và Nguyễn Huệ', correct: false },
+            { text: 'Mai Hắc Đế và Phùng Hưng', correct: false }
+        ]
+    },
+    {
+        question: 'Ai gác phú nhà để lo việc nước và ai là người thắng trận Đống Đa lừng lẫy?',
+        answers: [
+            { text: 'Lê Lợi và Nguyễn Huệ', correct: false },
+            { text: 'Trần Quốc Tuấn và Quang Trung', correct: true },
+            { text: 'Nguyễn Trãi và Trần Hưng Đạo', correct: false },
+            { text: 'Phạm Ngũ Lão và Bùi Thị Xuân', correct: false }
+        ]
+    },
+    {
+        question: 'Ai ba tuổi không nói cười, nghe tin nước có giặc liền vùng dậy đánh tan quân xâm lược?',
+        answers: [
+            { text: 'An Dương Vương', correct: false },
+            { text: 'Thánh Gióng', correct: true },
+            { text: 'Đinh Bộ Lĩnh', correct: false },
+            { text: 'Mai An Tiêm', correct: false }
+        ]
+    },
+    {
+        question: 'Ngày, tháng, năm nào Bác Hồ gửi bức thư cuối cùng cho ngành giáo dục?',
+        answers: [
+            { text: '20/11/1967', correct: false },
+            { text: '15/10/1968', correct: true },
+            { text: '2/9/1969', correct: false },
+            { text: '19/5/1969', correct: false }
+        ]
+    },
+    {
+        question: '"Bà nữ tướng" cầm cờ khởi nghĩa, cưỡi voi một ngà, vang danh chống quân Ngô là ai?',
+        answers: [
+            { text: 'Trưng Trắc', correct: false },
+            { text: 'Bà Triệu', correct: true },
+            { text: 'Bùi Thị Xuân', correct: false },
+            { text: 'Lê Chân', correct: false }
+        ]
+    },
+    {
+        question: 'Sự tích bánh chưng, bánh dày thuộc đời Vua Hùng thứ mấy?',
+        answers: [
+            { text: 'Vua Hùng Vương thứ 3', correct: false },
+            { text: 'Vua Hùng Vương thứ 6', correct: true },
+            { text: 'Vua Hùng Vương thứ 10', correct: false },
+            { text: 'Vua Hùng Vương thứ 18', correct: false }
+        ]
+    },
+    {
+        question: 'Vị chủ tướng nào kiên gan kháng chiến suốt mười năm, đánh bại Vương Thông ở Đông Quan?',
+        answers: [
+            { text: 'Nguyễn Trãi', correct: false },
+            { text: 'Lê Lợi', correct: true },
+            { text: 'Trần Nguyên Hãn', correct: false },
+            { text: 'Lê Sát', correct: false }
+        ]
+    },
+    {
+        question: 'Ai là người khởi xướng Đông Du, và ai từng "đập đá" ở Côn Lôn thể hiện chí sĩ yêu nước?',
+        answers: [
+            { text: 'Nguyễn Thái Học và Nguyễn An Ninh', correct: false },
+            { text: 'Phan Bội Châu và Phan Châu Trinh', correct: true },
+            { text: 'Huỳnh Thúc Kháng và Ngô Đình Diệm', correct: false },
+            { text: 'Trần Phú và Hà Huy Tập', correct: false }
+        ]
+    },
+    {
+        question: 'Trước khi ra đi tìm đường cứu nước, Bác Hồ từng dạy học ở đâu?',
+        answers: [
+            { text: 'Huế', correct: false },
+            { text: 'Phan Thiết', correct: true },
+            { text: 'Vinh', correct: false },
+            { text: 'Sài Gòn', correct: false }
+        ]
+    },
+    {
+        question: 'Ai là thủ lĩnh Việt Nam Quốc Dân Đảng, lãnh đạo khởi nghĩa Yên Bái, nêu câu nói "Không thành công..."?',
+        answers: [
+            { text: 'Nguyễn An Ninh', correct: false },
+            { text: 'Nguyễn Thái Học', correct: true },
+            { text: 'Hoàng Hoa Thám', correct: false },
+            { text: 'Phạm Hồng Thái', correct: false }
+        ]
+    },
+    {
+        question: 'Tướng triều Nguyễn nào bảo vệ Đà Nẵng, Gia Định, khiến quân Pháp nhiều phen lao đao?',
+        answers: [
+            { text: 'Trương Định', correct: false },
+            { text: 'Nguyễn Tri Phương', correct: true },
+            { text: 'Hoàng Diệu', correct: false },
+            { text: 'Lê Văn Duyệt', correct: false }
+        ]
+    },
+    {
+        question: 'Nhà thơ Nguyễn Đình Chiểu sinh ra và lớn lên tại địa phương nào?',
+        answers: [
+            { text: 'Đồng Tháp', correct: false },
+            { text: 'Bến Tre', correct: true },
+            { text: 'Long An', correct: false },
+            { text: 'Tiền Giang', correct: false }
+        ]
+    },
+    {
+        question: 'Năm đầu tiên Việt Nam tổ chức kỷ niệm Ngày Nhà giáo (20/11) là năm nào?',
+        answers: [
+            { text: '20-11-1975', correct: false },
+            { text: '20-11-1958', correct: true },
+            { text: '20-11-1982', correct: false },
+            { text: '20-11-1945', correct: false }
+        ]
+    },
+    {
+        question: 'Vào ngày 13/12 hằng năm, chúng ta tưởng nhớ người thầy giáo nào?',
+        answers: [
+            { text: 'Nguyễn Tất Thành', correct: false },
+            { text: 'Phan Ngọc Hiển', correct: true },
+            { text: 'Trần Đại Nghĩa', correct: false },
+            { text: 'Nguyễn Bỉnh Khiêm', correct: false }
+        ]
+    },
+    {
+        question: 'Danh tướng nhà Trần nào ngồi đan sọt, bị giáo đâm vào đùi mà không hay biết?',
+        answers: [
+            { text: 'Trần Quốc Tuấn', correct: false },
+            { text: 'Phạm Ngũ Lão', correct: true },
+            { text: 'Trần Quang Khải', correct: false },
+            { text: 'Trần Khánh Dư', correct: false }
+        ]
+    },
+    {
+        question: 'Vị tướng bơi lặn giỏi, dùng kế khoan thùng thuyền địch bảo vệ sông Bạch Đằng là ai?',
+        answers: [
+            { text: 'Dã Tượng', correct: false },
+            { text: 'Yết Kiêu', correct: true },
+            { text: 'Trần Quốc Tuấn', correct: false },
+            { text: 'Phạm Ngũ Lão', correct: false }
+        ]
+    },
+    {
+        question: 'Ai từng đánh tan quân Đường, được tôn xưng Bố Cái Đại Vương?',
+        answers: [
+            { text: 'Mai Hắc Đế', correct: false },
+            { text: 'Phùng Hưng', correct: true },
+            { text: 'Ngô Quyền', correct: false },
+            { text: 'Dương Đình Nghệ', correct: false }
+        ]
+    },
+    {
+        question: 'Ai dâng bánh chưng bánh dày mừng thọ vua cha, lập nên phong tục truyền thống ngày Tết?',
+        answers: [
+            { text: 'Tiết Liêu', correct: false },
+            { text: 'Lang Liêu', correct: true },
+            { text: 'Sơn Tinh', correct: false },
+            { text: 'Thủy Tinh', correct: false }
+        ]
     }
-]; // Danh sách câu hỏi
+];
 
 // Export the questions array
 if (typeof module !== 'undefined' && module.exports) {
