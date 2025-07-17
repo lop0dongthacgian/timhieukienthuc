@@ -189,7 +189,22 @@ h1 {
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+        /* === CSS chỉnh sửa cho nút Thoát === */
+#exit-btn {
+    background-color: #3498db; /* Màu xanh nhạt (light blue) */
+    color: white; /* Giữ chữ màu trắng cho dễ đọc */
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none; /* Bỏ viền mặc định nếu có */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Thêm bóng đổ để tạo chiều sâu */
+    transition: all 0.3s ease; /* Thêm hiệu ứng chuyển động mượt mà */
+}
 
+#exit-btn:hover {
+    background-color: #2980b9; /* Màu xanh đậm hơn khi di chuột vào */
+    transform: translateY(-2px); /* Hiệu ứng nhấc lên khi di chuột */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Bóng đổ đậm hơn khi di chuột */
+}
         
 .footer {
     margin-top: 30px;
